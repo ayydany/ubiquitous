@@ -9,7 +9,7 @@ Preview of the Startpage
 [live version](https://danyboss.github.io/ubiquitous/)
 
 ## Instalation
-Simply download from [here](google.com) and open it locally from your browser.
+Simply download from [here](https://github.com/DanyBoss/ubiquitous/archive/master.zip) and open it locally from your browser.
 
 ## Customization
 Changing the links is as simple as changing the links itself on the index.html file.
