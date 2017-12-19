@@ -1,6 +1,11 @@
 @font-face {
-	font-family: 'proggy';
-	src: url('res/ProggySmall.ttf');
+	font-family: 'proggySquare';
+	src: url('res/ProggySquare.ttf');
+}
+
+@font-face {
+	font-family: 'proggyTiny';
+	src: url('res/ProggyTiny.ttf');
 }
 
 :root {
@@ -18,16 +23,15 @@
     user-select: none;
 }
 
-* {
-	outline: none;
-}
-
 html {
+	font-family: 'proggySquare'; 	
+	text-rendering: geometricPrecision;
+
 	background: url('res/backgrounds/bg1.jpg') no-repeat center center fixed;
 	background-size: cover;
 }
 
-img{
+img {
 	max-width:100%;
 	max-height:100%;
 	width: auto;
@@ -46,19 +50,17 @@ img{
 }
 
 #links {
-	font-family: 'proggy'; 
-	font-size: 16px;
 	margin-left: 1%; margin-top: 2%;
 	width: 200px; height: 500px;
 }
 
 .title {
-	font-weight: bold;
 	margin-top: 1%; margin-bottom: 1%;
 }
 
 a {
 	text-decoration: none;
+	font-family: 'proggyTiny';
 	color: var(--main-gray-color);
 	transition: .2s;
 }
@@ -68,7 +70,7 @@ a:hover {
 }
 
 li {
-	padding-left: 9px;
+	padding-left: 5px;
 	border-left: 2px solid var(--main-hover-color);
 	transition: .2s;
 	line-height: 14px;
@@ -80,7 +82,7 @@ li:hover {
 
 ul {
 	padding-top: 12px;
+	padding-left: 12px;
 	list-style-type: none;
 	margin-left: 0;
-	padding-left: 12px;
 }

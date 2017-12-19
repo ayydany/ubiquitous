@@ -1,12 +1,12 @@
 
 //default max values for the randomizer function,
 //if you have more then 4 images in the folder change these numbers
-var maxNumber = 4;
+var maxNumber = 3;
 var minNumber = 1;
 
 randomizeBackground();
 
-function randomNumber(max=maxNumber, min=minNumber){
+function randomNumber(max = maxNumber, min = minNumber){
     return Math.floor((Math.random() * max) + min);
 }
 
