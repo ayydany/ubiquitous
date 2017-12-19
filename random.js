@@ -4,8 +4,6 @@
 var maxNumber = 3;
 var minNumber = 1;
 
-randomizeBackground();
-
 function randomNumber(max = maxNumber, min = minNumber){
     return Math.floor((Math.random() * max) + min);
 }
@@ -15,5 +13,6 @@ function randomizeBackground(){
 }
 
 function randomizeImage(){
-    $("#image").attr("src", "res/images/img" + randomNumber() + ".png");
+    $("#image").attr("src", "res/images/img" + randomNumber() + ".jpg");
+    $("#image").show();
 }
